@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 学习swift语言
+title: 学习swift语言2
 date: 2018-08-03 00:00:00 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img: apple_swift.jpg # Add image post (optional)
-tags: [Language, Software] # add tag
+tags: [Js] # add tag
 ---
 
 Swift是iOS，macOS，watchOS和tvOS应用程序开发的新编程语言。尽管如此，Swift的许多部分对您在C和Objective-C中的开发经验都很熟悉。    雨燕提供了自己的所有基本C和Objective-C类型的版本，包括Int为整数，Double并Float为浮点值，Bool布尔值，并String为文本数据。雨燕还提供了三种主要类型的集合强大的版本Array，Set和Dictionary，如在集合类型。    与C一样，Swift使用变量来存储和通过标识名称引用值。Swift还广泛使用其值无法更改的变量。这些被称为常量，并且比C中的常量更强大。当您使用不需要更改的值时，在整个Swift中使用常量来使代码更安全，更清晰。    除了熟悉的类型之外，Swift还引入了Objective-C中没有的高级类型，例如元组。元组使您可以创建和传递值的分组。您可以使用元组将函数中的多个值作为单个复合值返回。    Swift还引入了可选类型，它们处理缺少值。选配说要么“有是一个值，它等于X    ”或“有没有一个价值可言”。使用optionals类似于nil在Objective-C中使用指针，但它们适用于任何类型，而不仅仅是类。选项对象比nilObjective-C中的指针更安全，更具表现力，它们是许多Swift最强大功能的核心。    Swift是一种类型安全的语言，这意味着该语言可以帮助您清楚代码可以使用的值的类型。如果您的部分代码需要a    String，则类型安全会阻止您Int错误地传递它。同样，类型安全性可防止您意外地将可选项传递String给需要非可选项的代码String。类型安全性可帮助您在开发过程中尽早捕获并修复错误。
