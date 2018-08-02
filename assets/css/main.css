@@ -1169,6 +1169,10 @@ footer .copyright {
 
 .post .post-content p {
   margin-top: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 a.older-posts, a.newer-posts {
