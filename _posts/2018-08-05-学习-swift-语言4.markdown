@@ -25,9 +25,7 @@ XCode默认使用与CPU核数同样的线程来进行编译，但因为编译过
 ### 3.将Build Active Architecture Only改为Yes
 
 在project相应Target的Build Settings中，找到Build Active Architecture Only这一项，将Debug时的No改为Yes。
-
 这一项设置的是是否仅编译当前架构的版本号，假设为No，会编译全部架构的版本号。须要注意的是，此选项在Release模式下必须为No。否则公布的ipa在部分设备上将不能执行。
-
 这一项更改完之后，能够显著提高编译速度。
 
 ### 4. 以上为搜集资料，未完待续
