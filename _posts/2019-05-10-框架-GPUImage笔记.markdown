@@ -1,0 +1,8 @@
+---
+layout: post
+title: GPUImage笔记
+date: 2018-08-01 00:00:00 +0300
+description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+img: jackzc-gpuimage.jpg # Add image post (optional)
+tags: [框架] # add tag
+---

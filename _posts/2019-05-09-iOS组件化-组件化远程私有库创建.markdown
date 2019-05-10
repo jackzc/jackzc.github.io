@@ -3,7 +3,7 @@ layout: post
 title: 组件化远程私有库创建
 date: 2019-05-09 00:00:00 +0300
 description: 一步一步创建远程私有库、更新私有库
-img: apple_swift.jpg # Add image post (optional)
+img: jackzc-component.jpg # Add image post (optional)
 tags: [iOS组件化] # add tag
 ---
 
