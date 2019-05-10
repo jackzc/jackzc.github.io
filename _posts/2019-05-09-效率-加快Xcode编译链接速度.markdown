@@ -13,6 +13,12 @@ tags: [效率] # add tag
 ```shell
 defaults write com.apple.Xcode PBXNumberOfParallelBuildSubtasks 4
 ```
+
+开启设置显示编译时间
+```shell
+defaults write com.apple.dt.Xcode ShowBuildOperationDuration YES
+```
+
 XCode默认使用与CPU核数同样的线程来进行编译，但因为编译过程中的IO操作往往比CPU运算要多，因此适当的提升线程数能够在一定程度上加快编译速度。根据自己电脑的CPU核数，将线程数增加后编译速度略有提升。
 
 ### 2.将Debug Information Format改为DWARF
@@ -28,4 +34,11 @@ XCode默认使用与CPU核数同样的线程来进行编译，但因为编译过
 这一项设置的是是否仅编译当前架构的版本号，假设为No，会编译全部架构的版本号。须要注意的是，此选项在Release模式下必须为No。否则公布的ipa在部分设备上将不能执行。
 这一项更改完之后，能够显著提高编译速度。
 
-### 4. 以上为搜集资料，未完待续
+### 4.通过ccache提高编译速度 
+
+    [如何将 iOS 项目的编译速度提高5倍](https://zhuanlan.zhihu.com/p/27584726)
+    [ccache - 让Xcode编译速度飞起来](https://www.cnblogs.com/fishbay/p/7217398.html)
+    [a fast C/C++ compiler cache](https://ccache.dev/)
+
+### 5. 以上为搜集资料，未完待续
+
