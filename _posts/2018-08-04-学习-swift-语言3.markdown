@@ -131,8 +131,8 @@ end
 
 配置全局的用户名和邮箱
 ```ruby
-    git config --global user.name  "github’s Name"
-    git config --global user.email "github@xx.com"
+    git config --global user.name "github’s Name"
+    git config --global user.email "github@xx.com"
 ```
 
 在项目根目录下，对项目单独配置
