@@ -17,7 +17,7 @@ tags: [iOS组件化] # add tag
 
 ```ruby
    Pod::Spec.new do |s|
-
+   
 
 ```
 
@@ -26,7 +26,7 @@ tags: [iOS组件化] # add tag
 最后提交代码到远程仓库
 
 ```ruby
-   //:将本地代码加入本地仓库里
+   //将本地代码加入本地仓库中
    git add .
 
    //提交修改到本地仓库
@@ -62,7 +62,7 @@ tags: [iOS组件化] # add tag
   //:查看当前的tag值
   git tag
 
-  //:设置tag值
+  //设置tag值
   git tag "0.0.1"
 
   //上传提交tag
@@ -111,5 +111,5 @@ tags: [iOS组件化] # add tag
 
 查看当前配置
 ```ruby
-   $git config --list
+   $ git config --list
 ```
