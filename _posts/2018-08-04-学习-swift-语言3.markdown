@@ -58,25 +58,25 @@ end
 最后提交代码到远程仓库
 
 ```ruby
-   //将本地代码加入本地仓库里
+   #将本地代码加入本地仓库里
    git add .
 
-   //提交修改到本地仓库
+   #提交修改到本地仓库
    git commit -m '你的修改记录'
    
-   //查看当前的远程连接
+   #查看当前的远程连接
    git remote 
 
-   //添加名称为origin的远程连接
+   #添加名称为origin的远程连接
    git remote add origin '你的github项目地址'
    
-   //在push之前，查看spec是否配置有问题
+   #在push之前，查看spec是否配置有问题
    pod lib lint
 
-   //验证远程spec文件是否有误
+   #验证远程spec文件是否有误
    pod spec lint
 
-   //推送master分支的代码到名称为origin的远程仓库
+   #推送master分支的代码到名称为origin的远程仓库
    git push origin master
 
 ```
