@@ -91,21 +91,21 @@ end
 ##### 3.tag对应库的版本号标签设置
 
 ```ruby
-  //查看当前的tag值
+  #查看当前的tag值
   git tag
 
-  //设置tag值
+  #设置tag值
   git tag "0.0.1"
 
-  //上传提交tag
+  #上传提交tag
   git push --tags
 
-  //删除标签相关命令
-  //先删除本地再删除远程标签，删除后需要重新打标签
+  #删除标签相关命令
+  #先删除本地再删除远程标签，删除后需要重新打标签
 
-  //删除本地标签
+  #删除本地标签
   git tag -d 0.0.1
-  //删除远程标签
+  #删除远程标签
   git push origin :0.0.1
 ```
 
@@ -131,17 +131,17 @@ end
 
 配置全局的用户名和邮箱
 ```ruby
-   $ git config --global user.name  "github’s Name"
-   $ git config --global user.email "github@xx.com"
+    git config --global user.name  "github’s Name"
+    git config --global user.email "github@xx.com"
 ```
 
 在项目根目录下，对项目单独配置
 ```ruby
-   $ git config user.name  "gitlab’s Name"
-   $ git config user.email "gitlab@xx.com"
+    git config user.name  "gitlab’s Name"
+    git config user.email "gitlab@xx.com"
 ```
 
 查看当前配置
 ```ruby
-   $git config --list
+    git config --list
 ```
