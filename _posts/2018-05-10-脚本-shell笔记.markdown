@@ -7,9 +7,39 @@ img: jackzc-shell.jpg # Add image post (optional)
 tags: [脚本] # add tag
 ---
 
-### shell脚本执行方式
+### shell脚本4种执行方式
 
+#### 1.切换到shell脚本所在的目录（此时，称为工作目录）执行shell脚本
+```shell
+   cd /data/shell
+   ./hello.sh
+```
+其中./的意思是说在当前的工作目录下执行hello.sh。如果不加上./，bash可能会响应找到不到hello.sh的错误信息。因为目前的工作目录 （/data/shell）可能不在执行程序默认的搜索路径之列,也就是说，不在环境变量PASH的内容之中。查看PATH的内容可用 echo $PASH 命令。现在的/data/shell就不在环境变量PASH中的，所以必须加上./才可执行。
 
+#### 2.以绝对路径的方式去执行bash shell脚本
+```shell
+   /data/shell/hello.sh
+```
+
+#### 3.直接使用bash 或sh 来执行bash shell脚本
+```shell
+   cd /data/shell
+   bash hello.sh
+   #或
+   cd /data/shell
+   sh hello.sh
+```
+注意，若是以方法三的方式来执行，那么，可以不必事先设定shell的执行权限，甚至都不用写shell文件中的第一行（指定bash路径）。因为方法3是将hello.sh作为参数传给sh(bash)命令来执行的。这时不是hello.sh自己来执行，而是被人家调用执行，所以不要执行权限。那么不用 指定bash路径自然也好理解
+
+#### 4.在当前的shell环境中执行bash shell脚本
+```shell
+   cd /data/shell
+   . hello.sh
+   #或
+   cd /data/shell
+   source hello.sh
+```
+前三种方法执行shell脚本时都是在当前shell（称为父shell）开启一个子shell环境，此shell脚本就在这个子shell环境中执行。shell脚本执行完后子shell环境随即关闭，然后又回到父shell中。而方法四则是在当前shell中执行的。
 
 ### shell脚本执行多个命令
 
